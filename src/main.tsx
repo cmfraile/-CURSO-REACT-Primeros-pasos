@@ -2,10 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './styles/main.sass'
 
-function App() {return(<h1>Hola mundo</h1>)}
+import { holamundoApp2 as App } from './componentes/holamundo';
+import { FirstApp as First } from './componentes/componentetarea';
+import { fragmentest as Fragmentest , tsfragment as Tsf } from './componentes/fragment';
 
-ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-)
+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(<React.StrictMode><Tsf/></React.StrictMode>)
