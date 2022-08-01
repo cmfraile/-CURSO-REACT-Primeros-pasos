@@ -1,4 +1,4 @@
-import { random } from "underscore"
+import { random } from "underscore";
 
 export const fragmentest = () => 
 <>
@@ -6,12 +6,15 @@ export const fragmentest = () =>
     <p>chucha gushi</p>
 </>
 
-export const tsfragment = () => {
+export const tsfragment = ({title,dado2}:{title?:string,dado2?:number}) => {
+
+    console.log(title,dado2);
 
     const var1 = {
-        nombre: 'goku',
+        nombre: title,
         rango: 2,
-        dado : random(1,10)
+        dado : random(1,10),
+        dado2 : dado2
     }
     
     return (
