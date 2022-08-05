@@ -15,7 +15,7 @@ export const counter = ({contador}:counterif) => {
 
     
     return(
-        <div className='capp' >
+        <div className='capp'>
             <h1>Counterapp</h1>
             <h2>{contadorhook}</h2>
             <button onClick={ () => {sc('+')} }>+1</button>
