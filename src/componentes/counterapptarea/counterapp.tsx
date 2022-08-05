@@ -13,6 +13,7 @@ export const counter = ({contador}:counterif) => {
         }
     };
 
+    
     return(
         <div className='capp' >
             <h1>Counterapp</h1>
