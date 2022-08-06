@@ -10,8 +10,6 @@ export const fragmentest = () =>
 interface tsfragmentif {title?:string,dado2?:number}
 export const tsfragment = ({title='undefined',dado2}:tsfragmentif) => {
 
-    console.log(title,dado2);
-
     const var1 = {
         nombre: title,
         rango: 2,
