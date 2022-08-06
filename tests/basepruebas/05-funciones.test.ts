@@ -3,8 +3,6 @@ import * as fc from '../../src/basepruebas/05-funciones';
 const main = () => {
     test('GetUser debe retornar un objeto',() => {
         const testUser = {uid: 'ABC123',username: 'El_Papi1502'};
-        console.log(fc.getUser());
-
         //expect(testUser).toEqual(fc.getUser());
         expect(testUser).toStrictEqual(fc.getUser());
 
