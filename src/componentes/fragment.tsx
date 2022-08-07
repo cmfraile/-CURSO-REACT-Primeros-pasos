@@ -19,7 +19,7 @@ export const tsfragment = ({title}:any) => {
     return (
         <>
         <h1>fragmento</h1>
-        <p>Soy el supersayayin { var1.nombre }</p>
+        <p data-testid="testitle" >Soy el supersayayin { var1.nombre }</p>
         <code>{ JSON.stringify(var1) }</code>
         </>
     )
