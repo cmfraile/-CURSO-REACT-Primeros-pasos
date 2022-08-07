@@ -1,8 +1,8 @@
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 import './counterapp.sass';
 
-interface counterif {contador:number};
-export const counter = ({contador}:counterif) => {
+export const counter = ({contador}:any) => {
 
     const [ contadorhook , setCounter ] = useState(contador)
     const sc = (arg:string) => {
@@ -35,3 +35,6 @@ export const counter = ({contador}:counterif) => {
     */
     
 }
+
+
+counter.propTypes = {contador: PropTypes.number.isRequired};
