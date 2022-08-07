@@ -4,7 +4,7 @@ import React from 'react'
 
 const main = () => {
     test('debe de hacer match de snapshot',() => {
-        render(<Tsf/>)
+        const test = render(<Tsf title={'bulma'} />);
     });
 }
 

@@ -1,4 +1,5 @@
 import { random } from "underscore";
+import PropTypes from 'prop-types';
 
 export const fragmentest = () => 
 <>
@@ -6,8 +7,7 @@ export const fragmentest = () =>
     <p>chucha gushi</p>
 </>
 
-interface tsfragmentif {title?:string,dado2?:number}
-export const tsfragment = ({title='undefined',dado2=0}:tsfragmentif) => {
+export const tsfragment = ({title,dado2=0}:any) => {
 
     const var1 = {
         nombre: title,
@@ -23,4 +23,14 @@ export const tsfragment = ({title='undefined',dado2=0}:tsfragmentif) => {
         <code>{ JSON.stringify(var1) }</code>
         </>
     )
+}
+
+tsfragment.propTypes = {
+    title: PropTypes.string.isRequired,
+    subtitle: PropTypes.string
+}
+  
+tsfragment.defaultProps = {
+    title: 'GOKU',
+    subtitle: 'Supersayayin',
 }
