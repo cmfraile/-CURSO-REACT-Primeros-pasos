@@ -17,7 +17,7 @@ export const counter = ({contador}:any) => {
     return(
         <div className='capp'>
             <h1>Counterapp</h1>
-            <h2>{contadorhook}</h2>
+            <h2 data-testid='cid'>{contadorhook}</h2>
             <button onClick={ () => {sc('+')} }>+1</button>
             <button onClick={ () => {sc('-')} }>-1</button>
             <button onClick={ () => {sc('R')} }>Reset</button>
