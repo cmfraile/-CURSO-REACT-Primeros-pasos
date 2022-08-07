@@ -20,7 +20,7 @@ export const counter = ({contador}:any) => {
             <h2 data-testid='cid'>{contadorhook}</h2>
             <button onClick={ () => {sc('+')} }>+1</button>
             <button onClick={ () => {sc('-')} }>-1</button>
-            <button onClick={ () => {sc('R')} }>Reset</button>
+            <button aria-label="btn-reset" onClick={ () => {sc('R')} }>Reset</button>
         </div>
     )
 
